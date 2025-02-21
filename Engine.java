@@ -23,6 +23,8 @@ public class Engine implements EngineRequirements {
 
     public double getMaxFuel(){
         return 0.;
+        //returning maxfuel from attribute maxFuelLevel
+        //can set maxFuelLevel attribute whatever you want
     }
 
     public double getCurrentFuel(){
@@ -36,6 +38,7 @@ public class Engine implements EngineRequirements {
     public Boolean go(){
         return true;
         //engine can decrease in fuel by whatever increments you want
+        //add bounds to ensure fuel doesn't go negative
     }
 
     public String toString(){
