@@ -32,7 +32,7 @@ public class Car implements CarRequirements {
             System.out.println("There are " + this.remainingSeats + " remaining seats.");
             return passengersOnboard.add(p);
         } else {
-            System.out.println("Unfortunately, the car is full, there are no seats for " + p);
+            //System.out.println("Unfortunately, the car is full, there are no seats for " + p + ".");
             return false;
         }
     }
@@ -44,7 +44,7 @@ public class Car implements CarRequirements {
             System.out.println("There are " + this.remainingSeats + " remaining seats.");
             return passengersOnboard.remove(p);
         } else {
-            System.out.println(p + " is not on board.");
+            //System.out.println(p + " is not on board.");
             return false;
         }
     }
@@ -61,25 +61,25 @@ public class Car implements CarRequirements {
         return ("The car's maximum capacity is " + this.carSeatCapacity + " and the remaining number of seats is " + this.remainingSeats + ".");
     }
 
-    public static void main(String[] args){
-        Car myCar = new Car(15);
-        System.out.println(myCar);
-        Car myOtherCar = new Car(0);
-        System.out.println(myOtherCar);
-        myCar.printManifest();
-        myCar.printManifest();
+    // public static void main(String[] args){
+    //     Car myCar = new Car(15);
+    //     System.out.println(myCar);
+    //     Car myOtherCar = new Car(0);
+    //     System.out.println(myOtherCar);
+    //     myCar.printManifest();
+    //     myCar.printManifest();
 
-        Passenger Caitlyn = new Passenger("Caitlyn");
-        Passenger Bob = new Passenger("Bob");
-        System.out.println(Caitlyn);
-        myCar.addPassenger(Caitlyn);
-        myCar.addPassenger(Bob);
-        myCar.printManifest();
-        myCar.removePassenger(Bob);
-        myOtherCar.addPassenger(Bob);
+    //     Passenger Caitlyn = new Passenger("Caitlyn");
+    //     Passenger Bob = new Passenger("Bob");
+    //     System.out.println(Caitlyn);
+    //     myCar.addPassenger(Caitlyn);
+    //     myCar.addPassenger(Bob);
+    //     myCar.printManifest();
+    //     myCar.removePassenger(Bob);
+    //     myOtherCar.addPassenger(Bob);
 
 
-    }
+    // }
 }
 
 

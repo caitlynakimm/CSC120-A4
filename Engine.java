@@ -58,15 +58,15 @@ public class Engine implements EngineRequirements {
         return ("Engine has fuel type: " + this.f + " current fuel level: " + this.currentFuelLevel + " and max fuel level: " + this.maxFuelLevel);
     }
 
-    public static void main(String[] args){
-        Engine myEngine = new Engine(FuelType.ELECTRIC, 100., 100.);
-        System.out.println(myEngine);
-        //by default when we print an object we get its location rather than the content inside it
-        Engine myOtherEngine = new Engine(FuelType.STEAM, 50., 100.);
-        System.out.println(myOtherEngine);
-        while (myEngine.go()) {
-            System.out.println("Choo choo!");
-        }
-        System.out.println("Out of fuel.");
-    }
+    // public static void main(String[] args){
+    //     Engine myEngine = new Engine(FuelType.ELECTRIC, 100., 100.);
+    //     System.out.println(myEngine);
+    //     //by default when we print an object we get its location rather than the content inside it
+    //     Engine myOtherEngine = new Engine(FuelType.STEAM, 50., 100.);
+    //     System.out.println(myOtherEngine);
+    //     while (myEngine.go()) {
+    //         System.out.println("Choo choo!");
+    //     }
+    //     System.out.println("Out of fuel.");
+    // }
 }
