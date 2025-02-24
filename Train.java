@@ -69,6 +69,7 @@ public class Train implements TrainRequirements{
     }
 
     public static void main(String[] args){
+        //remaining seats reset per car help
         Train myTrain = new Train(FuelType.ELECTRIC, 100., 5, 30);
         System.out.println(myTrain);
         System.err.println();
