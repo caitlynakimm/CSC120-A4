@@ -1,3 +1,6 @@
+/**
+ * Represents a train's engine with fuel requirements and abilities
+ */
 public class Engine implements EngineRequirements {
     
     //Attributes
@@ -17,28 +20,43 @@ public class Engine implements EngineRequirements {
         this.maxFuelLevel = maxFuelLevel;
     }
 
+    /**
+     * @return fuel type used by this engine
+     */
     public FuelType getFuelType(){
         return this.f;
     }
 
+    /**
+     * @return max fuel level of this engine 
+     */
     public double getMaxFuel(){
         return this.maxFuelLevel;
         //returning maxfuel from attribute maxFuelLevel
         //can set maxFuelLevel attribute whatever you want
     }
 
+    /**
+     * @return current fuel level in this engine
+     */
     public double getCurrentFuel(){
         return this.currentFuelLevel;
     }
 
+    /**
+     * refuels engine to max fuel level which is set to 200
+     */
     public void refuel(){
        this.currentFuelLevel = maxFuelLevel; 
-        //engine can increase by whatever increment
     }
 
+    /**
+     * tries to move train, consumes fuel by decrements of 10
+     * @return true if enough fuel to move after decrement, else false
+     */
     public Boolean go(){
         double increment = 10;
-        //engine can decrease in fuel by whatever increments you want
+        //engine can decrease in fuel by whatever increment you want
         //add bounds to ensure fuel doesn't go negative
         
         if (this.currentFuelLevel >= increment) {
@@ -54,6 +72,9 @@ public class Engine implements EngineRequirements {
 
     }
 
+    /**
+     * @return String representation of engine's fuel details/status
+     */
     public String toString(){
         return ("Engine has fuel type: " + this.f + " current fuel level: " + this.currentFuelLevel + " and max fuel level: " + this.maxFuelLevel);
     }

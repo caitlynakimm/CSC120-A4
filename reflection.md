@@ -1,4 +1,6 @@
 Use this file to record your reflection on this assignment.
 
 - What are your initial impressions of how `Encapsulation` affects your programming?
+    I think initially it wasn't too complicated to implement encapsulation into my project since I could refer to the interfaces. However, as I got further into the programming process, I did get confused on how to use methods classes needed from each other, but after figuring it out, I was amazed by how my program could manipulate and access stored values easily from just the Train class. It made me think more deeply about how all the classes are interrelated.
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+    I think what worked was implementing all the requirements for all the classes other than Train. I think the methods and attributes I needed to create based on the interfaces was clear, but for Train I really had to look at the other classes especially Car and Passenger to understand their relationships to Train and the methods I would need from those classes in Train. Advice I would give to someone is to understand conceptually how each class connects to each other before coding to help make the actual programming process easier.

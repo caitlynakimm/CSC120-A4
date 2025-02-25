@@ -1,3 +1,6 @@
+/**
+ * Represents a passenger that can board and exit train cars
+ */
 public class Passenger implements PassengerRequirements{
     
     //Attributes
@@ -5,12 +8,16 @@ public class Passenger implements PassengerRequirements{
 
     /**
      * Constructor for Passenger
-     * @param name
+     * @param name Passenger's displayed name
      */
     public Passenger(String name) {
         this.name = name;
     }
 
+    /**
+     * Tries to let passenger board the particular car
+     * @param c Car to board
+     */
     public void boardCar(Car c){
         boolean success = c.addPassenger(this); // "this" refers to the current Passenger object
         
@@ -19,6 +26,10 @@ public class Passenger implements PassengerRequirements{
         }
     }
 
+    /**
+     * Tries to let passenger to exit the particular car
+     * @param c Car to exit
+     */
     public void getOffCar(Car c){
         boolean success = c.removePassenger(this);
 
@@ -27,6 +38,9 @@ public class Passenger implements PassengerRequirements{
         }
     }
 
+    /**
+     * @return Passenger's name as string representation
+     */
     public String toString(){
         return (this.name);
     }
